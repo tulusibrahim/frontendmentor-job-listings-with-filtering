@@ -96,10 +96,10 @@ function App() {
         {/* header */}
         <Flex w={'100%'} h='20%' bgRepeat='no-repeat' bg={DesaturatedDarkCyan} >
           {
-            windowSize > 700 ?
-              <Image src={bgHeaderDesk} w='100%' h='100%' />
-              :
+            windowSize < 700 ?
               <Image src={bgHeaderMobile} w='100%' h='100%' />
+              :
+              <Image src={bgHeaderDesk} w='100%' h='100%' />
           }
         </Flex>
 
